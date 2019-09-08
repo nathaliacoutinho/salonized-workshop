@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Salonized web development workshop</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid readme"
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+            <section class="readme-section">
+                <h2 class="readme-header">Setting up</h2>
+                <ol>
+                    <li>Go on your Desktop and create a new <strong>folder</strong> named <code>retreat-memories</code></li>
+                    <li>Open your text editor, and open that folder. Then go ahead and do the following:</li>
+                    <li>
+                    In Sublime Text left navigation:
+                    <ul>
+                        <li>Right click <strong>"New file"</strong></li>
+                        <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                        <li>Do the same to create a <code>style.css</code> file</li>
+                        <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+                    </ul>
+                    </ul>
+                    </li>
+                    <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+              </ol>
+            </section>
+
+            <section class="readme-section">
+                <h2 class="readme-header">Add some content to your page</h2>
+                <ul>
+                    <li>Start with this HTML code in <code>index.html</code></li>
+                </ul>
+
+<div class="highlight"><pre class="highlight html"><code>                    <span class="nt">&lt;html&gt;</span>
+                      <span class="nt">&lt;head&gt;</span>
+                        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;title&gt;</span>My own retreat memory book<span class="nt">&lt;/title&gt;</span>
+                      <span class="nt">&lt;/head&gt;</span>
+                      <span class="nt">&lt;body&gt;</span>
+                        <span class="nt">&lt;h1&gt;</span>This is a header, very important text<span class="nt">&lt;/h1&gt;</span>
+                        <span class="nt">&lt;p&gt;</span>This is the important line everyone reads..<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;</span>
+                          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>This is a link<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;/p&gt;</span>
+                    
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"#"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;/body&gt;</span>
+                    <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>            </section>
+
+            <section class="readme-section">
+                <h2 class="readme-header">CSS, adding some style.</h2>
+                <p>Link your stylesheet <code>style.css</code> in the <code>head</code> section of your HTML</p>
+<div class="highlight"><pre class="highlight html"><code>                    <span class="nt">&lt;head&gt;</span>
+                      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/head&gt;</span>
+</code></pre></div>                <p>Then copy/paste the CSS code below in <code>style.css</code> and <strong>fix it</strong> cause it's ugly</p>
+                <ul>
+                    <li>For fonts use <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+                    <li>You can find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="https://colorhunt.co/" target="_blank">Color Hunt</a></li>
+                </ul>
+<div class="highlight"><pre class="highlight css"><code>                    <span class="c">/* style.css */</span>
+                    <span class="nt">body</span><span class="p">{</span>
+                      <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">);</span>
+                      <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+                      <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+                      <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="nt">h1</span><span class="p">{</span>
+                      <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+                      <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+                      <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+                      <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="nt">h2</span> <span class="p">{</span>
+                      <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+                      <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                      <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+                      <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="nt">a</span> <span class="p">{</span>
+                      <span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+                      <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                      <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+                    <span class="p">}</span>
+</code></pre></div>                    <div class="image-container">
+                        <img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif">
+                    </div>
+            </section>
+            <section class="readme-section">
+                <h2 class="readme-header">Wrap with <code>div</code> and add a footer</h2>
+                <p>Wrap different sections in different <code>div</code></p>
+                <p>Go ahead, get creative and have fun!</p>
+                <div class="image-container">
+                    <img src="https://media2.giphy.com/media/3Fi5jZkZdJA4M/source.gif">
+                </div>
+            </section>
+</div>
+  </body>
+</html>
