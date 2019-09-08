@@ -17,3 +17,5 @@ gem 'font-awesome-sass', '~> 5.5.0'
 # Markdown support
 gem "middleman-syntax"
 gem 'pygments.rb'
+
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
